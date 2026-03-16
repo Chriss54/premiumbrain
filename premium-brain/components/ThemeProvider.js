@@ -20,10 +20,8 @@ export default function ThemeProvider({ children }) {
       setTheme(saved);
       document.documentElement.setAttribute('data-theme', saved);
     } else {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initial = prefersDark ? 'dark' : 'light';
-      setTheme(initial);
-      document.documentElement.setAttribute('data-theme', initial);
+      // Always default to dark mode
+      document.documentElement.setAttribute('data-theme', 'dark');
     }
   }, []);
 

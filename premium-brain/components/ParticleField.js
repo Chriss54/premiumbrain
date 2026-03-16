@@ -21,7 +21,7 @@ export default function ParticleField({ className = '' }) {
     canvas.height = rect.height * dpr;
     ctx.scale(dpr, dpr);
 
-    const particleCount = Math.min(80, Math.floor((rect.width * rect.height) / 12000));
+    const particleCount = Math.min(60, Math.floor((rect.width * rect.height) / 15000));
     const particles = [];
 
     for (let i = 0; i < particleCount; i++) {
@@ -125,9 +125,13 @@ export default function ParticleField({ className = '' }) {
     window.addEventListener('resize', handleResize);
     canvas.addEventListener('mousemove', handleMouse);
     canvas.addEventListener('mouseleave', handleMouseLeave);
-    rafRef.current = requestAnimationFrame(animate);
+    // Defer animation start so it doesn't compete with first paint
+    const startTimer = setTimeout(() => {
+      rafRef.current = requestAnimationFrame(animate);
+    }, 100);
 
     return () => {
+      clearTimeout(startTimer);
       window.removeEventListener('resize', handleResize);
       canvas.removeEventListener('mousemove', handleMouse);
       canvas.removeEventListener('mouseleave', handleMouseLeave);

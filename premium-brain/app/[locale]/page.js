@@ -1,15 +1,18 @@
 'use client';
 
 import { Suspense } from 'react';
+import dynamic from 'next/dynamic';
 import { IndustryProvider } from '@/components/IndustryProvider';
 import Hero from '@/components/Hero';
-import Problem from '@/components/Problem';
-import Solution from '@/components/Solution';
-import Features from '@/components/Features';
-import SocialProof from '@/components/SocialProof';
-import Pricing from '@/components/Pricing';
-import FAQ from '@/components/FAQ';
-import FinalCTA from '@/components/FinalCTA';
+
+// Lazy-load below-fold sections for faster initial paint
+const Problem = dynamic(() => import('@/components/Problem'));
+const Solution = dynamic(() => import('@/components/Solution'));
+const Features = dynamic(() => import('@/components/Features'));
+const SocialProof = dynamic(() => import('@/components/SocialProof'));
+const Pricing = dynamic(() => import('@/components/Pricing'));
+const FAQ = dynamic(() => import('@/components/FAQ'));
+const FinalCTA = dynamic(() => import('@/components/FinalCTA'));
 
 function LandingPage() {
   return (
