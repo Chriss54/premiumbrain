@@ -1,0 +1,96 @@
+.cta {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+}
+
+.bgGlow {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+  background: radial-gradient(circle, var(--color-brand-red-glow) 0%, transparent 60%);
+  filter: blur(80px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.content {
+  text-align: center;
+  max-width: 650px;
+  position: relative;
+}
+
+.headline {
+  margin-bottom: var(--space-lg);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-2xl);
+}
+
+.ctaBtn {
+  margin-bottom: var(--space-md);
+}
+
+.note {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* ===== R3-5: Shimmer Border Beam on CTA Button ===== */
+.shimmerBtn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.shimmerBtn::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--shimmer-angle, 0deg),
+    transparent 0%,
+    transparent 30%,
+    rgba(255, 255, 255, 0.6) 48%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.6) 52%,
+    transparent 70%,
+    transparent 100%
+  );
+  animation: shimmerRotate 3s linear infinite;
+  z-index: -2;
+}
+
+.shimmerBtn::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+  background: var(--color-brand-red);
+  z-index: -1;
+}
+
+.shimmerBtn:hover::before {
+  animation-duration: 2s;
+}
+
+@keyframes shimmerRotate {
+  0% { --shimmer-angle: 0deg; }
+  100% { --shimmer-angle: 360deg; }
+}
+
+@property --shimmer-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}

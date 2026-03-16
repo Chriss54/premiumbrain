@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "PremiumBrain — Your Company's Intelligent Memory",
+    "description": "Transform your company knowledge into an AI-powered brain. Every document, video, and meeting — instantly searchable, in any language."
+  },
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "bookDemo": "Book Demo"
+  },
+  "hero": {
+    "tagline": "Enterprise Knowledge Intelligence",
+    "headline": "Your Company Knows\nMore Than It Remembers",
+    "subheadline": "Cut onboarding time by 60%. Give every employee — in every language — instant access to everything your company has ever known.",
+    "cta": "Book Your Live Demo",
+    "ctaSub": "See it work with your own data",
+    "trustedBy": "Trusted by forward-thinking companies",
+    "mockup": {
+      "dashboard": "Dashboard",
+      "askAi": "Ask AI",
+      "documents": "Documents",
+      "videos": "Videos",
+      "tasks": "Tasks",
+      "languages": "Languages",
+      "searchPlaceholder": "Ask your company brain anything...",
+      "askButton": "Ask AI"
+    }
+  },
+  "problem": {
+    "label": "The Problem",
+    "headline": "Your Knowledge Is Trapped",
+    "description": "Critical company knowledge lives in scattered documents, training videos, meeting recordings, and the heads of people who leave. Every time an employee quits, you lose institutional memory.",
+    "stats": {
+      "searchTime": "19.8%",
+      "searchTimeLabel": "of work time spent searching for information",
+      "knowledgeLoss": "42%",
+      "knowledgeLossLabel": "of institutional knowledge lost with employee turnover",
+      "trainingCost": "€15,400",
+      "trainingCostLabel": "average cost of onboarding a single new hire"
+    }
+  },
+  "solution": {
+    "label": "The Solution",
+    "headline": "One Brain. Every Language. All Knowledge.",
+    "description": "PremiumBrain ingests your entire company knowledge base — PDFs, videos, audio, documents — and makes it instantly accessible to every team member, in their native language.",
+    "steps": {
+      "upload": {
+        "title": "Upload Everything",
+        "description": "PDFs, training videos, manuals, meeting recordings, SOPs — drop it all in."
+      },
+      "analyze": {
+        "title": "AI Analyzes Deeply",
+        "description": "Videos are visually analyzed, not just transcribed. If a machine is set to 100°, PremiumBrain captures it — even if nobody said it."
+      },
+      "query": {
+        "title": "Ask in Any Language",
+        "description": "Your team asks questions in their language. PremiumBrain answers in their language. Automatically."
+      }
+    }
+  },
+  "features": {
+    "label": "Capabilities",
+    "headline": "Built for Real Companies",
+    "items": {
+      "multimodal": {
+        "title": "Multimodal Analysis",
+        "description": "Goes beyond transcription. Visually analyzes training videos, identifies on-screen settings, procedures, and demonstrations that speech alone misses."
+      },
+      "multilingual": {
+        "title": "Multilingual Intelligence",
+        "description": "Employees ask in their language, get answers in their language. Supports automatic language detection based on user preferences."
+      },
+      "voice": {
+        "title": "Voice-First Interface",
+        "description": "Mobile app lets employees speak directly to the company brain. Perfect for warehouse floors, kitchen staff, or field technicians."
+      },
+      "automation": {
+        "title": "Automated Workflows",
+        "description": "Automatically creates tasks from meetings, prioritizes ideas by urgency, and generates meeting summaries — zero manual effort."
+      },
+      "security": {
+        "title": "Enterprise Security",
+        "description": "Your data stays yours. Role-based access, encrypted storage, and compliance-ready infrastructure for regulated industries."
+      },
+      "integration": {
+        "title": "Seamless Integration",
+        "description": "Connects with existing tools — Google Workspace, Microsoft 365, Slack, and custom APIs. No workflow disruption."
+      }
+    },
+    "heroBullets": {
+      "video": "Reads machine displays and on-screen settings from training videos",
+      "settings": "Extracts temperatures, pressures, and calibration data automatically",
+      "procedures": "Identifies step-by-step procedures that speech alone misses"
+    }
+  },
+  "socialProof": {
+    "label": "Built & Used by Us",
+    "headline": "We Don't Just Build It.\nWe Run Our Business On It.",
+    "description": "PremiumBrain started as our own internal tool. Every Google Meet is recorded, transcribed, and searchable. Tasks are auto-generated. Ideas are auto-prioritized. We built it because we needed it — and now it's yours.",
+    "stats": {
+      "meetings": "34+",
+      "meetingsLabel": "Meetings processed & searchable",
+      "actions": "460+",
+      "actionsLabel": "Action items auto-generated",
+      "hours": "50+",
+      "hoursLabel": "Hours of recordings analyzed"
+    },
+    "testimonials": {
+      "chris": {
+        "quote": "We built PremiumBrain because we were drowning in our own meeting recordings. Now every decision, every idea, every context is instantly findable. Our new hires onboard in days, not weeks.",
+        "name": "Chris Müller",
+        "role": "Founder & AI Architect"
+      },
+      "lutfiya": {
+        "quote": "As a data scientist, I'm obsessed with making knowledge accessible. PremiumBrain doesn't just transcribe — it understands. It reads machine settings from video, detects languages automatically, and connects dots that humans miss.",
+        "name": "Dr. Lutfiya Miller",
+        "role": "Founder & AI Architect"
+      }
+    }
+  },
+  "pricing": {
+    "label": "Pricing",
+    "headline": "Choose Your Path",
+    "community": {
+      "name": "Community",
+      "price": "$100",
+      "period": "/month",
+      "description": "Access our ready-built tools, expert community, and learning resources.",
+      "features": [
+        "Ready-to-use AI knowledge tools",
+        "Expert community & peer exchange",
+        "Learning resources & workshops",
+        "Monthly live Q&A sessions",
+        "Template library"
+      ],
+      "cta": "Join Community"
+    },
+    "custom": {
+      "name": "Custom Solution",
+      "price": "From $2,000",
+      "period": "",
+      "description": "A PremiumBrain built specifically for your company — your data, your languages, your workflows.",
+      "features": [
+        "Tailored to your industry & data",
+        "Full multilingual configuration",
+        "Custom integrations & workflows",
+        "Dedicated onboarding & training",
+        "Priority support & maintenance",
+        "Scalable to enterprise needs"
+      ],
+      "cta": "Book Strategy Call"
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "headline": "Questions & Answers",
+    "items": [
+      {
+        "question": "What types of data can PremiumBrain process?",
+        "answer": "PremiumBrain handles PDFs, Word documents, training videos, audio recordings, meeting transcripts, presentations, spreadsheets, and plain text files. Our multimodal analysis goes beyond text — we visually analyze video content to capture information that's never spoken aloud."
+      },
+      {
+        "question": "How does the multilingual feature work?",
+        "answer": "PremiumBrain automatically detects each user's language preference and responds accordingly. Your German technician can ask in German, your French manager in French, and your English-speaking CEO in English — all querying the same knowledge base. No translation setup required."
+      },
+      {
+        "question": "Is our data secure?",
+        "answer": "Absolutely. Your data is encrypted at rest and in transit. We use role-based access controls, and your company's knowledge base is completely isolated from other clients. We're built for industries with strict compliance requirements."
+      },
+      {
+        "question": "How long does setup take?",
+        "answer": "For a custom solution, initial setup takes 1-2 weeks depending on the volume of existing data. We handle the entire ingestion process and train your team on using the system. Most teams are productive within the first day."
+      },
+      {
+        "question": "Can we try it with our own data before committing?",
+        "answer": "Yes! That's exactly what our demo call is for. Bring some of your own documents or data, and we'll show you PremiumBrain processing and answering questions about YOUR company knowledge — live."
+      },
+      {
+        "question": "What makes PremiumBrain different from ChatGPT or other AI tools?",
+        "answer": "ChatGPT knows the internet. PremiumBrain knows YOUR company. It's a dedicated RAG (Retrieval-Augmented Generation) system trained exclusively on your data. It doesn't hallucinate about your processes — it retrieves verified answers from your actual documents, videos, and recordings."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Ready to Give Your Company a Brain?",
+    "description": "See PremiumBrain in action with YOUR company knowledge. Bring your data. We'll do the rest.",
+    "button": "Book Your Demo Now",
+    "note": "15 minutes · Your data · We'll show you answers your team can't find today"
+  },
+  "footer": {
+    "brand": "PremiumBrain",
+    "tagline": "by science experts.ai",
+    "description": "Enterprise knowledge intelligence that speaks every language.",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "imprint": "Imprint",
+    "contact": "Contact",
+    "email": "hello@premiumBrain.ai",
+    "rights": "© 2026 PremiumBrain.ai — All rights reserved."
+  }
+}

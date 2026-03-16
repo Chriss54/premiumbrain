@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "PremiumBrain — La mémoire intelligente de votre entreprise",
+    "description": "Transformez les connaissances de votre entreprise en un cerveau alimenté par l'IA. Chaque document, vidéo et réunion — instantanément consultable, dans toutes les langues."
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "bookDemo": "Réserver une démo"
+  },
+  "hero": {
+    "tagline": "Enterprise Knowledge Intelligence",
+    "headline": "Votre entreprise en sait\nplus qu'elle ne s'en souvient",
+    "subheadline": "Réduisez le temps d'intégration de 60%. Donnez à chaque employé — dans sa langue — un accès instantané à tout le savoir de votre entreprise.",
+    "cta": "Réserver votre démo live",
+    "ctaSub": "Voyez-le fonctionner avec vos propres données",
+    "trustedBy": "La confiance des entreprises visionnaires",
+    "mockup": {
+      "dashboard": "Tableau de bord",
+      "askAi": "Demander",
+      "documents": "Documents",
+      "videos": "Vidéos",
+      "tasks": "Tâches",
+      "languages": "Langues",
+      "searchPlaceholder": "Posez une question à votre entreprise...",
+      "askButton": "Demander"
+    }
+  },
+  "problem": {
+    "label": "Le Problème",
+    "headline": "Votre savoir est prisonnier",
+    "description": "Les connaissances critiques de l'entreprise sont dispersées dans des documents, vidéos de formation, enregistrements de réunions et dans la tête de collaborateurs qui partent. À chaque départ, vous perdez de la mémoire institutionnelle.",
+    "stats": {
+      "searchTime": "19,8%",
+      "searchTimeLabel": "du temps de travail passé à chercher des informations",
+      "knowledgeLoss": "42%",
+      "knowledgeLossLabel": "des connaissances perdues avec le turnover",
+      "trainingCost": "15 400 €",
+      "trainingCostLabel": "coût moyen d'intégration d'un nouveau collaborateur"
+    }
+  },
+  "solution": {
+    "label": "La Solution",
+    "headline": "Un cerveau. Toutes les langues. Tout le savoir.",
+    "description": "PremiumBrain ingère toute votre base de connaissances — PDFs, vidéos, audio, documents — et la rend instantanément accessible à chaque membre de l'équipe, dans sa langue maternelle.",
+    "steps": {
+      "upload": {
+        "title": "Téléchargez tout",
+        "description": "PDFs, vidéos de formation, manuels, enregistrements de réunions, procédures — déposez tout."
+      },
+      "analyze": {
+        "title": "L'IA analyse en profondeur",
+        "description": "Les vidéos sont analysées visuellement, pas seulement transcrites. Si une machine est réglée à 100°, PremiumBrain le capture — même si personne ne l'a dit."
+      },
+      "query": {
+        "title": "Posez vos questions dans n'importe quelle langue",
+        "description": "Votre équipe pose ses questions dans sa langue. PremiumBrain répond dans sa langue. Automatiquement."
+      }
+    }
+  },
+  "features": {
+    "label": "Fonctionnalités",
+    "headline": "Conçu pour les vraies entreprises",
+    "items": {
+      "multimodal": {
+        "title": "Analyse multimodale",
+        "description": "Va au-delà de la transcription. Analyse visuellement les vidéos de formation, identifie les paramètres à l'écran, les procédures et les démonstrations que la parole seule ne capture pas."
+      },
+      "multilingual": {
+        "title": "Intelligence multilingue",
+        "description": "Les employés posent leurs questions dans leur langue et obtiennent des réponses dans leur langue. Détection automatique de la langue selon les préférences utilisateur."
+      },
+      "voice": {
+        "title": "Interface vocale",
+        "description": "L'application mobile permet aux employés de parler directement au cerveau de l'entreprise. Parfait pour les entrepôts, le personnel de cuisine ou les techniciens de terrain."
+      },
+      "automation": {
+        "title": "Workflows automatisés",
+        "description": "Crée automatiquement des tâches à partir des réunions, priorise les idées par urgence et génère des résumés de réunion — sans effort manuel."
+      },
+      "security": {
+        "title": "Sécurité entreprise",
+        "description": "Vos données restent les vôtres. Contrôle d'accès basé sur les rôles, stockage chiffré et infrastructure conforme pour les secteurs réglementés."
+      },
+      "integration": {
+        "title": "Intégration transparente",
+        "description": "Se connecte à vos outils existants — Google Workspace, Microsoft 365, Slack et APIs personnalisées. Aucune perturbation de workflow."
+      }
+    },
+    "heroBullets": {
+      "video": "Lit les affichages machines et les réglages à l'écran des vidéos de formation",
+      "settings": "Extrait automatiquement températures, pressions et données de calibration",
+      "procedures": "Identifie les procédures étape par étape que la parole seule manque"
+    }
+  },
+  "socialProof": {
+    "label": "Créé & utilisé par nous",
+    "headline": "Nous ne le construisons pas seulement.\nNous gérons notre entreprise avec.",
+    "description": "PremiumBrain a commencé comme notre propre outil interne. Chaque Google Meet est enregistré, transcrit et consultable. Les tâches sont auto-générées. Les idées auto-priorisées. Nous l'avons créé parce que nous en avions besoin — et maintenant il est à vous.",
+    "stats": {
+      "meetings": "34+",
+      "meetingsLabel": "Réunions traitées & consultables",
+      "actions": "460+",
+      "actionsLabel": "Actions auto-générées",
+      "hours": "50+",
+      "hoursLabel": "Heures d'enregistrements analysées"
+    },
+    "testimonials": {
+      "chris": {
+        "quote": "Nous avons créé PremiumBrain parce que nous nous noyions dans nos propres enregistrements de réunions. Maintenant, chaque décision, chaque idée, chaque contexte est instantanément trouvable. Nos nouveaux collaborateurs sont opérationnels en jours, pas en semaines.",
+        "name": "Chris Müller",
+        "role": "Founder & AI Architect"
+      },
+      "lutfiya": {
+        "quote": "En tant que data scientist, je suis obsédée par l'accessibilité du savoir. PremiumBrain ne se contente pas de transcrire — il comprend. Il lit les réglages machines depuis les vidéos, détecte les langues automatiquement et relie des points que les humains manquent.",
+        "name": "Dr. Lutfiya Miller",
+        "role": "Founder & AI Architect"
+      }
+    }
+  },
+  "pricing": {
+    "label": "Tarifs",
+    "headline": "Choisissez votre voie",
+    "community": {
+      "name": "Communauté",
+      "price": "100 €",
+      "period": "/mois",
+      "description": "Accédez à nos outils prêts à l'emploi, à la communauté d'experts et aux ressources d'apprentissage.",
+      "features": [
+        "Outils de connaissance IA prêts à l'emploi",
+        "Communauté d'experts & échanges",
+        "Ressources d'apprentissage & ateliers",
+        "Sessions Q&A live mensuelles",
+        "Bibliothèque de modèles"
+      ],
+      "cta": "Rejoindre la communauté"
+    },
+    "custom": {
+      "name": "Solution sur mesure",
+      "price": "À partir de 2 000 €",
+      "period": "",
+      "description": "Un PremiumBrain construit spécifiquement pour votre entreprise — vos données, vos langues, vos workflows.",
+      "features": [
+        "Adapté à votre secteur & données",
+        "Configuration multilingue complète",
+        "Intégrations & workflows personnalisés",
+        "Onboarding & formation dédiés",
+        "Support prioritaire & maintenance",
+        "Scalable aux besoins entreprise"
+      ],
+      "cta": "Réserver un appel stratégique"
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "headline": "Questions & Réponses",
+    "items": [
+      {
+        "question": "Quels types de données PremiumBrain peut-il traiter ?",
+        "answer": "PremiumBrain traite les PDFs, documents Word, vidéos de formation, enregistrements audio, transcriptions de réunions, présentations, tableurs et fichiers texte. Notre analyse multimodale va au-delà du texte — nous analysons visuellement le contenu vidéo pour capturer des informations jamais prononcées."
+      },
+      {
+        "question": "Comment fonctionne la fonctionnalité multilingue ?",
+        "answer": "PremiumBrain détecte automatiquement la préférence linguistique de chaque utilisateur et répond en conséquence. Votre technicien allemand peut demander en allemand, votre manager français en français, et votre CEO anglophone en anglais — tous interrogent la même base de connaissances. Aucune configuration de traduction nécessaire."
+      },
+      {
+        "question": "Nos données sont-elles en sécurité ?",
+        "answer": "Absolument. Vos données sont chiffrées au repos et en transit. Nous utilisons des contrôles d'accès basés sur les rôles, et la base de connaissances de votre entreprise est complètement isolée des autres clients. Nous sommes conçus pour les secteurs à exigences de conformité strictes."
+      },
+      {
+        "question": "Combien de temps prend la mise en place ?",
+        "answer": "Pour une solution sur mesure, la mise en place initiale prend 1 à 2 semaines selon le volume de données existant. Nous gérons tout le processus d'ingestion et formons votre équipe. La plupart des équipes sont productives dès le premier jour."
+      },
+      {
+        "question": "Peut-on l'essayer avec nos propres données ?",
+        "answer": "Oui ! C'est exactement le but de notre appel démo. Apportez quelques-uns de vos documents ou données, et nous vous montrerons PremiumBrain traitant et répondant aux questions sur VOS connaissances d'entreprise — en direct."
+      },
+      {
+        "question": "Qu'est-ce qui différencie PremiumBrain de ChatGPT ?",
+        "answer": "ChatGPT connaît Internet. PremiumBrain connaît VOTRE entreprise. C'est un système RAG dédié entraîné exclusivement sur vos données. Il n'hallucine pas sur vos processus — il récupère des réponses vérifiées de vos documents, vidéos et enregistrements réels."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Prêt à donner un cerveau à votre entreprise ?",
+    "description": "Voyez PremiumBrain en action avec VOS connaissances d'entreprise. Apportez vos données. On s'occupe du reste.",
+    "button": "Réserver votre démo maintenant",
+    "note": "15 minutes · Vos données · Nous vous montrerons des réponses que votre équipe ne trouve pas aujourd'hui"
+  },
+  "footer": {
+    "brand": "PremiumBrain",
+    "tagline": "by science experts.ai",
+    "description": "Intelligence de connaissances d'entreprise qui parle toutes les langues.",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "imprint": "Mentions légales",
+    "contact": "Contact",
+    "email": "hello@premiumBrain.ai",
+    "rights": "© 2026 PremiumBrain.ai — Tous droits réservés."
+  }
+}

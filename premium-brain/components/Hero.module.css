@@ -1,0 +1,418 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: calc(var(--nav-height) + var(--space-4xl));
+  padding-bottom: var(--space-4xl);
+  position: relative;
+  overflow: hidden;
+}
+
+/* R3-1: Particle canvas */
+.particleCanvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.bgGlow {
+  position: absolute;
+  top: -30%;
+  right: -20%;
+  width: 70%;
+  height: 70%;
+  background: radial-gradient(circle, var(--color-brand-red-glow) 0%, transparent 70%);
+  filter: blur(80px);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gridOverlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--color-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.3;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 30%, black 20%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 30%, black 20%, transparent 70%);
+  z-index: 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4xl);
+  align-items: center;
+  position: relative;
+  z-index: var(--z-base);
+}
+
+/* Text Side — removed hardcoded opacity animation, now handled by BlurFadeIn */
+.inner {
+  position: relative;
+}
+
+.tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-brand-red);
+  background: var(--color-badge-bg);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(196, 30, 58, 0.15);
+  margin-bottom: var(--space-xl);
+}
+
+.headline {
+  margin-bottom: var(--space-xl);
+}
+
+.headlineLine {
+  display: block;
+}
+
+.headlineLine:last-child {
+  color: var(--color-brand-red);
+}
+
+.subheadline {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 500px;
+  margin-bottom: var(--space-2xl);
+}
+
+.ctaGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.ctaBtn {
+  width: fit-content;
+}
+
+.ctaSub {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* ===== R3-5: Shimmer Border Beam on CTA Button ===== */
+.shimmerBtn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.shimmerBtn::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--shimmer-angle, 0deg),
+    transparent 0%,
+    transparent 30%,
+    rgba(255, 255, 255, 0.6) 48%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.6) 52%,
+    transparent 70%,
+    transparent 100%
+  );
+  animation: shimmerRotate 3s linear infinite;
+  z-index: -2;
+}
+
+.shimmerBtn::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+  background: var(--color-brand-red);
+  z-index: -1;
+}
+
+.shimmerBtn:hover::before {
+  animation-duration: 2s;
+}
+
+@keyframes shimmerRotate {
+  0% { --shimmer-angle: 0deg; }
+  100% { --shimmer-angle: 360deg; }
+}
+
+/* Fallback for browsers not supporting @property */
+@supports not (background: conic-gradient(from 0deg, red, blue)) {
+  .shimmerBtn::before {
+    display: none;
+  }
+}
+
+@property --shimmer-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Visual Side — Dashboard Mockup */
+.visual {
+  position: relative;
+}
+
+.dashboardMockup {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow:
+    0 20px 60px var(--color-shadow-strong),
+    0 0 0 1px var(--color-border);
+  position: relative;
+}
+
+/* ===== R3-7: Border Beam on Dashboard ===== */
+.borderBeam {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.borderBeam::before {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(
+    from var(--beam-angle, 0deg),
+    transparent 0%,
+    transparent 35%,
+    rgba(196, 30, 58, 0.5) 45%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(196, 30, 58, 0.5) 55%,
+    transparent 65%,
+    transparent 100%
+  );
+  animation: beamRotate 6s linear infinite;
+}
+
+.borderBeam::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+  background: var(--color-bg-secondary);
+}
+
+@keyframes beamRotate {
+  0% { --beam-angle: 0deg; }
+  100% { --beam-angle: 360deg; }
+}
+
+@property --beam-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.mockupHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-bg-tertiary);
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  z-index: 11;
+}
+
+.mockupDots {
+  display: flex;
+  gap: 6px;
+}
+
+.mockupDots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.mockupDots span:nth-child(1) { background: #FF5F56; }
+.mockupDots span:nth-child(2) { background: #FFBD2E; }
+.mockupDots span:nth-child(3) { background: #27C93F; }
+
+.mockupUrl {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  background: var(--color-bg-primary);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  flex: 1;
+  text-align: center;
+}
+
+.mockupBody {
+  display: flex;
+  min-height: 280px;
+  position: relative;
+  z-index: 11;
+}
+
+.mockupSidebar {
+  width: 140px;
+  border-right: 1px solid var(--color-border);
+  padding: var(--space-md) var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 6px 10px;
+  border-radius: var(--radius-md);
+  font-size: 0.7rem;
+  color: var(--color-text-tertiary);
+  cursor: default;
+  transition: all var(--transition-fast);
+}
+
+.sidebarItem[data-active='true'] {
+  background: var(--color-badge-bg);
+  color: var(--color-brand-red);
+  font-weight: 600;
+}
+
+.sidebarIcon {
+  font-size: 0.85rem;
+}
+
+.mockupMain {
+  flex: 1;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.mockupSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.typingText {
+  display: flex;
+  align-items: center;
+  min-height: 1.2em;
+  color: var(--color-text-primary);
+  font-size: 0.75rem;
+}
+
+.cursor {
+  display: inline-block;
+  font-weight: 300;
+  color: var(--color-brand-red);
+  margin-left: 1px;
+  animation: cursorBlink 0.53s step-end infinite;
+}
+
+.cursor.cursorBlink {
+  animation: none;
+  opacity: 1;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.askBtn {
+  background: var(--color-brand-red);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.mockupStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+}
+
+.statCard {
+  background: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  text-align: center;
+}
+
+.statNumber {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .subheadline {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ctaGroup {
+    align-items: center;
+  }
+
+  .mockupSidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: calc(var(--nav-height) + var(--space-2xl));
+  }
+
+  .mockupStats {
+    grid-template-columns: 1fr;
+  }
+}

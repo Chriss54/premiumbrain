@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "tagline": "Built for Trades & Technical Services",
+    "headline": "Your Business Knows\nMore Than Any Manual Covers",
+    "subheadline": "Reduce safety incidents by giving every apprentice instant access to procedures, regulations, and decades of hard-won expertise — even by voice, on the workshop floor."
+  },
+  "problem": {
+    "stats": {
+      "searchTime": "19.8%",
+      "searchTimeLabel": "of working time spent searching for technical information",
+      "knowledgeLoss": "42%",
+      "knowledgeLossLabel": "of technical knowledge lost when a master technician retires",
+      "trainingCost": "€15,400",
+      "trainingCostLabel": "average cost of onboarding a single apprentice"
+    }
+  },
+  "socialProof": {
+    "description": "We built PremiumBrain for businesses where knowledge is critical. Trades companies use it to preserve decades of expertise and make it instantly accessible — even by voice, on the workshop floor."
+  }
+}

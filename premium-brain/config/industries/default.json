@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "tagline": "Enterprise Knowledge Intelligence",
+    "headline": "Your Company Knows\nMore Than It Remembers"
+  },
+  "problem": {
+    "stats": {
+      "searchTime": "19.8%",
+      "knowledgeLoss": "42%",
+      "trainingCost": "€15,400"
+    }
+  },
+  "socialProof": {
+    "description": "We don't just sell PremiumBrain — we run our entire business on it. Every meeting, every document, every process is captured and instantly accessible."
+  }
+}

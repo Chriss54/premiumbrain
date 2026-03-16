@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "tagline": "Built for Hotels & Hospitality",
+    "headline": "Your Hotel Knows\nMore Than Your Staff Remembers",
+    "subheadline": "Cut seasonal staff onboarding from weeks to days. Every SOP, every procedure, every guest-handling protocol — instantly accessible to every new hire, in their language."
+  },
+  "problem": {
+    "stats": {
+      "searchTime": "23%",
+      "searchTimeLabel": "of shift time lost to searching for procedures",
+      "knowledgeLoss": "67%",
+      "knowledgeLossLabel": "of hotel knowledge lost with seasonal turnover",
+      "trainingCost": "€12,000",
+      "trainingCostLabel": "average training cost per seasonal employee"
+    }
+  },
+  "socialProof": {
+    "description": "We built PremiumBrain for multilingual teams. Hotels with staff speaking 5+ languages use it to eliminate training bottlenecks and language barriers — from day one."
+  }
+}

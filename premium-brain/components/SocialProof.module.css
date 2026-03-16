@@ -1,0 +1,227 @@
+.socialProof {
+  position: relative;
+  overflow: hidden;
+}
+
+.bgAccent {
+  position: absolute;
+  bottom: -40%;
+  left: -20%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, var(--color-brand-red-glow) 0%, transparent 70%);
+  filter: blur(100px);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.content {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto var(--space-3xl);
+  position: relative;
+}
+
+.headline {
+  margin-bottom: var(--space-lg);
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: var(--space-xl);
+}
+
+/* ===== R3-6: Marquee Testimonials ===== */
+.marqueeWrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--space-3xl);
+  padding: var(--space-sm) 0;
+}
+
+.marqueeFadeLeft,
+.marqueeFadeRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marqueeFadeLeft {
+  left: 0;
+  background: linear-gradient(90deg, var(--color-bg-primary), transparent);
+}
+
+.marqueeFadeRight {
+  right: 0;
+  background: linear-gradient(270deg, var(--color-bg-primary), transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: var(--space-xl);
+  animation: marqueeScroll 30s linear infinite;
+  width: max-content;
+}
+
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+/* Testimonial Cards */
+.testimonialCard {
+  position: relative;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl) var(--space-xl);
+  text-align: left;
+  min-width: 380px;
+  max-width: 380px;
+  flex-shrink: 0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonialCard:hover {
+  border-color: rgba(196, 30, 58, 0.3);
+  box-shadow: 0 8px 32px rgba(196, 30, 58, 0.08);
+}
+
+.quoteIcon {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-brand-red);
+  opacity: 0.3;
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-xl);
+  pointer-events: none;
+  user-select: none;
+}
+
+.quote {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-xl) 0;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.authorImage {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid var(--color-brand-red);
+}
+
+.headshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorInfo strong {
+  font-size: 0.95rem;
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.authorInfo span {
+  font-size: 0.8rem;
+  color: var(--color-brand-red);
+  font-weight: 500;
+}
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.statCard {
+  text-align: center;
+  padding: var(--space-2xl);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.statCard:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: 0 8px 32px var(--color-shadow);
+}
+
+.statIcon {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: var(--space-sm);
+}
+
+.statValue {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-tertiary);
+}
+
+@media (max-width: 768px) {
+  .testimonialCard {
+    min-width: 300px;
+    max-width: 300px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .marqueeTrack {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .marqueeFadeLeft,
+  .marqueeFadeRight {
+    display: none;
+  }
+}
